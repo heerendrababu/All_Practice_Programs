@@ -4,7 +4,7 @@ package com.kmss.practice;
 public class EvenIndex 
 {
 
-	public static void main(String[] args)
+    public static void main(String[] args)
 	{
       int[] arr = {10,22,33,44,55,66};
       for(int i=0;i<=arr.length-1;i++)
