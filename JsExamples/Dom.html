@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Example</title>
+<style>
+  .highlight {
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<h1 id="heading">Heerendra, Babu</h1>
+<p id="paragraph">This is my paragraph</p>
+
+<button id="btn">Click me</button>
+
+<script>
+  // Accessing elements from the DOM by using document.method()
+  const heading = document.getElementById('heading');
+  const paragraph = document.getElementById('paragraph');
+  const button = document.getElementById('btn');
+
+  // user for changing content and style by using id 
+  heading.innerHTML = 'Welcome to Dom Demo Model';
+  paragraph.classList.add('highlight');
+
+  // Adding event listener
+  button.addEventListener('click', function() {
+    alert('Button is  Clicked! ');
+  });
+</script>
+
+</body>
+</html>
