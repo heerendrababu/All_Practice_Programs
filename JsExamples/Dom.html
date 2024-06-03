@@ -25,13 +25,11 @@
   const button = document.getElementById('btn');
 
   // user for changing content and style by using id 
-  heading.innerHTML = 'Welcome to Dom Demo Model';
   paragraph.classList.add('highlight');
 
-  // Adding event listener
-  button.addEventListener('click', function() {
-    alert('Button is  Clicked! ');
-  });
+  // Adding event listener when button is clicked the h1 data will changed 
+  button.addEventListener('click', function() {(heading.innerHTML = 'Welcome to DOM Demo Model'
+)});
 </script>
 
 </body>
